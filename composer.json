@@ -1,0 +1,19 @@
+{
+    "name": "stef/key-value-manipulation",
+    "description": "Convert a kay / value paired string in a traversable object.",
+    "authors": [
+        {
+            "name": "Stefanius",
+            "email": "sgrootveld@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.4",
+        "stef/manipulation": "dev-master",
+        "symfony/http-foundation": "2.6.0"
+    },
+    "autoload": {
+        "psr-4": { "Stef\\KeyValueManipulation\\": "src/Stef/KeyValueManipulation/" }
+    }
+}
