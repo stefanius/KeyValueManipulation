@@ -25,11 +25,12 @@ class KeyValueToArrayManipulatorTest extends \PHPUnit_Framework_TestCase{
     }
 
     public function provider() {
-        $block1 = "name:Bill;sex:M;city:Houston";
+        $block1 = "name:Bill;sex:M;city:Houston;married:TRUE";
         $result1 = [
             'name' => 'Bill',
             'sex' => 'M',
-            'city' => 'Houston'
+            'city' => 'Houston',
+            'married' => true
         ];
 
         return [

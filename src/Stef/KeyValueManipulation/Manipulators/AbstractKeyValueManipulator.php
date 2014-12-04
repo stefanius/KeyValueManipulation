@@ -47,6 +47,12 @@ abstract class AbstractKeyValueManipulator extends AbstractStringManipulator{
         $key = trim($pair[0]);
         $val = trim($pair[1]);
 
+        if ($val === 'TRUE') {
+            $val = true;
+        } elseif ($val === 'FALSE') {
+            $val = false;
+        }
+
         return ['key' => $key, 'value' => $val];
     }
 }
