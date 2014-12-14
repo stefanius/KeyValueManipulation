@@ -25,7 +25,10 @@ class KeyValueToArrayManipulator extends AbstractKeyValueManipulator {
 
         foreach ($lines as $line) {
             $pair = $this->splitLineIntoKeyValuePair($line);
-            $kv[$pair['key']] = $pair['value'];
+
+            if (is_array($pair) && array_key_exists('key', $pair) && array_key_exists('value', $pair) ) {
+                $kv[$pair['key']] = $pair['value'];
+            }
         }
 
         return $kv;
