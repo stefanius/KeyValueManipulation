@@ -40,8 +40,12 @@ abstract class AbstractKeyValueManipulator extends AbstractStringManipulator{
     {
         $pair = explode($this->keyValueDelimiter, $line);
 
-        if (count($pair) !== 2) {
+        if (count($pair) !== 2 && (count($pair) === 1 && array_key_exists(0, $pair) && !empty($pair[0]))) {
             throw new WrongDelimiterException("Just make a message for this ;)");
+        }
+
+        if (count($pair) === 1 && array_key_exists(0, $pair) && empty($pair[0])) {
+            return [];
         }
 
         $key = trim($pair[0]);
