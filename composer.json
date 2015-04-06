@@ -1,6 +1,6 @@
 {
     "name": "stef/key-value-manipulation",
-    "description": "Convert a kay / value paired string in a traversable object.",
+    "description": "Convert a key / value paired string in a traversable object.",
     "authors": [
         {
             "name": "Stefanius",
@@ -11,7 +11,7 @@
     "require": {
         "php": ">=5.4",
         "stef/manipulation": "dev-master",
-        "symfony/http-foundation": "2.6.0"
+        "symfony/http-foundation": ">=2.6"
     },
     "require-dev": {
         "phpunit/phpunit": "4.3.*"
