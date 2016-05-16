@@ -3,10 +3,10 @@
 namespace Stef\KeyValueManipulation\Manipulators;
 
 use Stef\KeyValueManipulation\Exception\WrongDelimiterException;
-use Stef\Manipulation\Manipulators\AbstractStringManipulator;
+use Stefanius\Manipulation\Manipulators\AbstractStringManipulator;
 
-abstract class AbstractKeyValueManipulator extends AbstractStringManipulator{
-
+abstract class AbstractKeyValueManipulator extends AbstractStringManipulator
+{
     /**
      * @var string
      */

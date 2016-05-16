@@ -2,11 +2,10 @@
 
 namespace Stef\KeyValueManipulation\Manipulators;
 
-
 use Symfony\Component\HttpFoundation\ParameterBag;
 
-class KeyValueToParameterBagManipulator extends KeyValueToArrayManipulator {
-
+class KeyValueToParameterBagManipulator extends KeyValueToArrayManipulator
+{
     /**
      * @param $string
      * @return ParameterBag

@@ -2,8 +2,8 @@
 
 namespace Stef\KeyValueManipulation\Manipulators;
 
-class KeyValueToJsonManipulator extends KeyValueToArrayManipulator {
-
+class KeyValueToJsonManipulator extends KeyValueToArrayManipulator
+{
     /**
      * @param $string
      * @return array|string

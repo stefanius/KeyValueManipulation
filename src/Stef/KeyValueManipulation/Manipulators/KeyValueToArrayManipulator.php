@@ -2,9 +2,8 @@
 
 namespace Stef\KeyValueManipulation\Manipulators;
 
-
-class KeyValueToArrayManipulator extends AbstractKeyValueManipulator {
-
+class KeyValueToArrayManipulator extends AbstractKeyValueManipulator
+{
     /**
      * @param $string
      * @return array
